@@ -27,6 +27,8 @@ import java.awt.GridLayout;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class Main extends JFrame {
 
@@ -63,13 +65,17 @@ public class Main extends JFrame {
 	      { "Bert Nilsson" }, { "Jennifer Larsson" }, { "Lars Jennifersson" },
 	      { "Berit Bengtsson" }, { "Mona-Lisa Målarberg" }, {"Johanno Knatsson"} },
 	      new Object[] { "Medlemmar"});
-
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 375);
+		setBounds(100, 100, 655, 394);
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		menuBar.add(lblNewLabel_1);
+		lblNewLabel_1.setIcon(new ImageIcon("/Users/jela/Desktop/friskis och svettis.jpg"));
 		
 		JMenu mnArkiv = new JMenu("Arkiv");
 		menuBar.add(mnArkiv);
@@ -110,132 +116,78 @@ public class Main extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		JPanel panel = new JPanel();
+		panel.setBackground(Color.WHITE);
 		contentPane.add(panel);
-		GridBagLayout gbl_panel = new GridBagLayout();
-		gbl_panel.columnWidths = new int[]{34, 99, 146, 0};
-		gbl_panel.rowHeights = new int[]{26, 26, 26, 26, 26, 26, 0, 0, 0, 0, 0};
-		gbl_panel.columnWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gbl_panel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		panel.setLayout(gbl_panel);
+		panel.setLayout(null);
 		
 		JLabel lblNamn = new JLabel("Namn");
-		GridBagConstraints gbc_lblNamn = new GridBagConstraints();
-		gbc_lblNamn.anchor = GridBagConstraints.WEST;
-		gbc_lblNamn.insets = new Insets(0, 0, 5, 5);
 		gbc_lblNamn.gridx = 1;
-		gbc_lblNamn.gridy = 0;
-		panel.add(lblNamn, gbc_lblNamn);
+		lblNamn.setBounds(0, 0, 0, 0);
+		panel.add(lblNamn);
 		
 		txtBertNilsson = new JTextField();
+		txtBertNilsson.setBounds(0, 0, 0, 0);
 		txtBertNilsson.setText("Bert Nilsson");
-		GridBagConstraints gbc_txtBertNilsson = new GridBagConstraints();
-		gbc_txtBertNilsson.anchor = GridBagConstraints.NORTHWEST;
-		gbc_txtBertNilsson.insets = new Insets(0, 0, 5, 0);
-		gbc_txtBertNilsson.gridx = 2;
-		gbc_txtBertNilsson.gridy = 0;
-		panel.add(txtBertNilsson, gbc_txtBertNilsson);
+		panel.add(txtBertNilsson);
 		txtBertNilsson.setColumns(10);
 		
 		JLabel lblPersonnr = new JLabel("Personnr");
-		GridBagConstraints gbc_lblPersonnr = new GridBagConstraints();
-		gbc_lblPersonnr.anchor = GridBagConstraints.WEST;
-		gbc_lblPersonnr.insets = new Insets(0, 0, 5, 5);
-		gbc_lblPersonnr.gridx = 1;
-		gbc_lblPersonnr.gridy = 1;
-		panel.add(lblPersonnr, gbc_lblPersonnr);
+		lblPersonnr.setBounds(34, 0, 55, 13);
+		panel.add(lblPersonnr);
 		
 		textField = new JTextField();
+		textField.setBounds(138, 0, 146, 18);
 		textField.setText("7212231653");
-		GridBagConstraints gbc_textField = new GridBagConstraints();
-		gbc_textField.anchor = GridBagConstraints.NORTH;
-		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField.insets = new Insets(0, 0, 5, 0);
-		gbc_textField.gridx = 2;
-		gbc_textField.gridy = 1;
-		panel.add(textField, gbc_textField);
+		panel.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblAdress = new JLabel("Adress");
-		GridBagConstraints gbc_lblAdress = new GridBagConstraints();
-		gbc_lblAdress.anchor = GridBagConstraints.WEST;
-		gbc_lblAdress.insets = new Insets(0, 0, 5, 5);
-		gbc_lblAdress.gridx = 1;
-		gbc_lblAdress.gridy = 2;
-		panel.add(lblAdress, gbc_lblAdress);
+		lblAdress.setBounds(34, 28, 43, 16);
+		panel.add(lblAdress);
 		
 		txtMunkhttegatan = new JTextField();
+		txtMunkhttegatan.setBounds(138, 23, 146, 26);
 		txtMunkhttegatan.setText("Munkhättegatan 32");
-		GridBagConstraints gbc_txtMunkhttegatan = new GridBagConstraints();
-		gbc_txtMunkhttegatan.anchor = GridBagConstraints.NORTH;
-		gbc_txtMunkhttegatan.fill = GridBagConstraints.HORIZONTAL;
-		gbc_txtMunkhttegatan.insets = new Insets(0, 0, 5, 0);
-		gbc_txtMunkhttegatan.gridx = 2;
-		gbc_txtMunkhttegatan.gridy = 2;
-		panel.add(txtMunkhttegatan, gbc_txtMunkhttegatan);
+		panel.add(txtMunkhttegatan);
 		txtMunkhttegatan.setColumns(10);
 		
 		JLabel lblTelefonnummer = new JLabel("Telefonnummer");
-		GridBagConstraints gbc_lblTelefonnummer = new GridBagConstraints();
-		gbc_lblTelefonnummer.anchor = GridBagConstraints.WEST;
-		gbc_lblTelefonnummer.insets = new Insets(0, 0, 5, 5);
-		gbc_lblTelefonnummer.gridx = 1;
-		gbc_lblTelefonnummer.gridy = 3;
-		panel.add(lblTelefonnummer, gbc_lblTelefonnummer);
+		lblTelefonnummer.setBounds(34, 59, 99, 16);
+		panel.add(lblTelefonnummer);
 		
 		textField_1 = new JTextField();
+		textField_1.setBounds(138, 54, 146, 26);
 		textField_1.setText("040-231213");
-		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
-		gbc_textField_1.anchor = GridBagConstraints.NORTH;
-		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_1.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_1.gridx = 2;
-		gbc_textField_1.gridy = 3;
-		panel.add(textField_1, gbc_textField_1);
+		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("Email");
-		GridBagConstraints gbc_lblEmail = new GridBagConstraints();
-		gbc_lblEmail.anchor = GridBagConstraints.WEST;
-		gbc_lblEmail.insets = new Insets(0, 0, 5, 5);
-		gbc_lblEmail.gridx = 1;
-		gbc_lblEmail.gridy = 4;
-		panel.add(lblEmail, gbc_lblEmail);
+		lblEmail.setBounds(34, 90, 34, 16);
+		panel.add(lblEmail);
 		
 		txtBerraalltomfiskse = new JTextField();
+		txtBerraalltomfiskse.setBounds(138, 85, 146, 26);
 		txtBerraalltomfiskse.setText("berra@alltomfisk.se");
-		GridBagConstraints gbc_txtBerraalltomfiskse = new GridBagConstraints();
-		gbc_txtBerraalltomfiskse.anchor = GridBagConstraints.NORTH;
-		gbc_txtBerraalltomfiskse.fill = GridBagConstraints.HORIZONTAL;
-		gbc_txtBerraalltomfiskse.insets = new Insets(0, 0, 5, 0);
-		gbc_txtBerraalltomfiskse.gridx = 2;
-		gbc_txtBerraalltomfiskse.gridy = 4;
-		panel.add(txtBerraalltomfiskse, gbc_txtBerraalltomfiskse);
+		panel.add(txtBerraalltomfiskse);
 		txtBerraalltomfiskse.setColumns(10);
 		
 		JLabel lblBild = new JLabel("Bild");
-		GridBagConstraints gbc_lblBild = new GridBagConstraints();
-		gbc_lblBild.anchor = GridBagConstraints.WEST;
-		gbc_lblBild.insets = new Insets(0, 0, 5, 5);
-		gbc_lblBild.gridx = 1;
-		gbc_lblBild.gridy = 5;
-		panel.add(lblBild, gbc_lblBild);
+		lblBild.setBounds(34, 121, 23, 16);
+		panel.add(lblBild);
 		
 		txtBerrapng = new JTextField();
+		txtBerrapng.setBounds(138, 116, 146, 26);
 		txtBerrapng.setText("berra.png");
-		GridBagConstraints gbc_txtBerrapng = new GridBagConstraints();
-		gbc_txtBerrapng.insets = new Insets(0, 0, 5, 0);
-		gbc_txtBerrapng.anchor = GridBagConstraints.NORTH;
-		gbc_txtBerrapng.fill = GridBagConstraints.HORIZONTAL;
-		gbc_txtBerrapng.gridx = 2;
-		gbc_txtBerrapng.gridy = 5;
-		panel.add(txtBerrapng, gbc_txtBerrapng);
+		panel.add(txtBerrapng);
 		txtBerrapng.setColumns(10);
 		
 		JButton btnSpara = new JButton("Spara");
-		GridBagConstraints gbc_btnSpara = new GridBagConstraints();
-		gbc_btnSpara.gridx = 2;
-		gbc_btnSpara.gridy = 9;
-		panel.add(btnSpara, gbc_btnSpara);
+		btnSpara.setBounds(172, 199, 78, 37);
+		panel.add(btnSpara);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("/Users/jela/Desktop/berrabild.jpg"));
+		lblNewLabel.setBounds(27, 149, 84, 95);
+		panel.add(lblNewLabel);
 	}
-
 }

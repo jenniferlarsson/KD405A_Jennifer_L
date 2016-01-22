@@ -67,7 +67,6 @@ public class Main extends JFrame {
 	      new Object[] { "Medlemmar"});
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 608, 375);
 		setBounds(100, 100, 655, 394);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -121,7 +120,6 @@ public class Main extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblNamn = new JLabel("Namn");
-		gbc_lblNamn.gridx = 1;
 		lblNamn.setBounds(0, 0, 0, 0);
 		panel.add(lblNamn);
 		

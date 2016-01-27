@@ -1,7 +1,7 @@
 Svar: 
 
 a) Konstruktorn är  
-public House(int yearBuilt,int size){ //diverse kod
+public House(int yearBuilt,int size){ 
 }
 
 b) Instansvariabler är 
@@ -11,12 +11,12 @@ private final int minSize = 10;
 
 c) Instansmetoder är
 public int getYearBuilt(){
-//diverse kod }
-public int getSize(){ //diverse kod
+ }
+public int getSize(){ 
 }
 
 d) Att man inte kan ändra den efter den har instansierats.
 
 e) Det gör man för att private kan man bara komma åt innefrån klassen men public kan man komma åt utanför.
 
-f)
+f) 

@@ -140,6 +140,7 @@ public class Main extends JFrame {
 		for (int i = 0; i < bikes.size(); i ++) {
 			String printString = "bike " + (i + 1) + " är storlek " + bikes.get(i).getSize() + " och är färgen " + bikes.get(i).getColor() + " och kostar " + bikes.get(i).getPrice() +  "\n";
 			System.out.println(printString);
+			 
 		}	
 	}
 

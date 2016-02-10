@@ -74,7 +74,7 @@ public class HouseGUI extends JFrame {
 
 		myHouses = new House[10];
 		 		
-		myHouses[0] = new House(1995,53);
+		myHouses[0] = new House(2014,53);
 		myHouses[1] = new House(1997,130);
 		myHouses[2] = new House(1830,200);
 		myHouses[3] = new House(1910,67);

@@ -1,10 +1,10 @@
 
-/* The base class for all Mammals */
+/** The base class for all Mammals */
 public abstract class Mammal extends Animal {
 
 	private int gestationTime;
 	
-	/*Constructor */
+	/**Constructor */
 	public Mammal(String latinName, int gestationTime) {
 		super(latinName); 
 		this.setGestationTime(gestationTime);

@@ -1,9 +1,9 @@
-/* A cat class, extends the Mammal class. */
+/** A cat class, extends the Mammal class. */
 public class Cat extends Mammal {
 	
 	private int numberOfLives;
 
-	/* The cat constructor */
+	/** The cat constructor */
 	public Cat(String latinName, int gestationTime, int numberOfLives) {
 		super(latinName, gestationTime);
 		this.numberOfLives= numberOfLives;
@@ -20,7 +20,7 @@ public class Cat extends Mammal {
 	}
 
 	@Override
-	/*Returns information about the cat as a string */
+	/**Returns information about the cat as a string */
 	public String getInfo() {
 		return " the cat named " + getFriendlyName() + " lat " + getLatinName() + " nurses for " + getGestationTime() + " months and has "+ numberOfLives + " lives ";
 	}

@@ -1,16 +1,16 @@
 
-/* The animal class, base class for all living beings */
+/** The animal class, base class for all living beings */
 public abstract class Animal {
 	
 	private String latinName;
 	private String friendlyName;
 	
-	/*Constructor */
+	/**Constructor */
 	public Animal(String latinName) {
 		this.setLatinName(latinName);
 	}
 	
-	/* Returns the information about this animal */
+	/** Returns the information about this animal */
 	public abstract String getInfo();
 	
 	public void setFriendlyName (String friendlyName){

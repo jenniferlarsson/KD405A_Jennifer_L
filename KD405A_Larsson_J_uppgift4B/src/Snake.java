@@ -1,9 +1,9 @@
 
-/* A class describing a Snake */
+/** A class describing a Snake */
 public class Snake extends Animal{
 	private boolean poisonous;
 
-	/* Constructor */
+	/** Constructor */
 	public Snake(String latinName, boolean poisonous) {
 		super(latinName);
 		this.poisonous = poisonous;

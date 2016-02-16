@@ -12,17 +12,17 @@ public class Human {
 		this.name = name;
 	}
 	
-	/* Returns the human name of this human */
+	/** Returns the human name of this human */
 	public static String getName() {
 		return name;
 	}
 	
-	/* Adds a dog to this human */
+	/** Adds a dog to this human */
 	public void buyDog (Dog dog) {
 		this.dog = dog;
 	}
 	
-	/* Returns information about the human as a string */
+	/** Returns information about the human as a string */
 	public String getInfo() {	
 		if (dog != null) {
 			return name +" äger en hund som heter "+ dog.name;

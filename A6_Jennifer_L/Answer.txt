@@ -1,0 +1,6 @@
+1. Mellan malmö C till lund C
+2. http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=0|80000|0&selPointTo=0|81216|0&noOf=5
+3. Journeys beskriver alla resor som går mellan de valda punkterna. Journey är en specifik resa.
+Routelinks är alla delresor, byten. En routlink är en specifik delrutt. Hierarkin är journeys -> journey -> routelinks -> routelink
+4. <NoOfChanges>. Under huvudtaggen <Journey>.
+5. Prices finns inte  implementerad.

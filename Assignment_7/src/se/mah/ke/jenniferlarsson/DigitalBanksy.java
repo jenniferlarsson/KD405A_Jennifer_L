@@ -58,7 +58,6 @@ public class DigitalBanksy extends JPanel {
         g2.drawImage(canvas, null, null);
     }
 
-
     public void fillCanvas(Color c) {
         int color = c.getRGB();
         for (int x = 0; x < canvas.getWidth(); x++) {
@@ -66,12 +65,6 @@ public class DigitalBanksy extends JPanel {
                 canvas.setRGB(x, y, color);
             }
         }
-        repaint();
-    }
-
-
-    public void drawLine(Color c, int x1, int y1, int x2, int y2) {
-        // Implement line drawing
         repaint();
     }
 
@@ -86,12 +79,6 @@ public class DigitalBanksy extends JPanel {
         repaint();
     }
 
-    public void drawOval(Color c, int x1, int y1, int width, int height) {
-        // Implement oval drawing
-        repaint();
-    }
-    
-    
     //tråden
     private class DrawOnTvThread extends Thread {
     
